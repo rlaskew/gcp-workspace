@@ -1,0 +1,33 @@
+  121  bq --help
+  122  bq help
+  123  bq help | less
+  124  bq mk sandbox_data
+  125  bq help mk
+  126  bq mk help 
+  127  bq help | less
+  128  bq query help | less
+  129  bq query help
+  130  bq query
+  131  bq help
+  132  bq help | less
+  133  bq head sandbox_data.yob2018
+  134  bq help | less
+  135  bq help head
+  136  bq help head | less
+  137  bq head -n 3
+  138  bq head sandbox_data.yob2018 -n 3
+  139  bq head -n 3sandbox_data.yob2018
+  140  bq head -n 3 sandbox_data.yob2018
+  141  bq head -n 3 --format csv  sandbox_data.yob2018
+  143  bq help head | less
+  144  bq help
+  145  bq help | less
+  146  bq query `select * from sandbox_data.yob2018`
+  147  bq help | less
+  148  bq query 'select * from sandbox_data.yob2018'
+  149  bq query 'select * from sandbox_data.yob2018' --format csv
+  151  bq query --format csv 'select * from sandbox_data.yob2018'
+  152  bq query --format csv 'select * from sandbox_data.yob2018' | wc -l
+  153  bq query --format csv 'select * from sandbox_data.yob2018' > yob2018_100rows.csv
+  167  history | grep "bq" >> scratch_paper.csv
+  168  history | grep "bq" >> scratch_paper.txt
